@@ -12,20 +12,24 @@ const App = () => { //functional component //(2)
     //now fragments
     <>    
 
-      <myName />
+      <MyName />
+      <MyName />
 
      <h1>Hello world</h1>
      <p>This is the begining of React</p>
      <p className="className">
        Here className is used in place of class
      </p>
+     <MyName />
+     <MyName />
+     <MyName />
    
     </>
 
   )
 }
 
-const myName = () => {
+const MyName = () => {
   return <h1>Abdulkarim Mandaviya</h1>
 }
 
