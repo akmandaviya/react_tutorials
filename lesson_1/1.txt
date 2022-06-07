@@ -1,0 +1,31 @@
+BASIC INTRO:
+------------
+
+react is a library to build user interface.
+react is a library build on js.
+based on components(code resuability).
+     -->by importing the component which are made earlier.
+     -->we can use it any where in the application.
+use to make SPA (single page application).
+only for view(no mvc concepts),(model,view,controller)(view means UI).
+react is fast due to use of virtual dom.
+js,html,css all the concepts will be there in react.js
+we will use JSx--> js extension syntax.
+
+
+WHY REACT ?
+-----------
+
+-> react was introduced due to virtual dom , as it is fast.
+
+Before that what is dom ?
+    --> document object model
+    -->we know document.getElementById("test").innerHTML="my name";
+    -->what here?
+      --> picks the elment by ID.
+      --> destroys its children.
+      --> add content
+      --> add its children again.
+      --> it picks the css styling if anything is there.
+      --> after that is shows that that element on browser. 
+
