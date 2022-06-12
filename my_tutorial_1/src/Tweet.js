@@ -23,5 +23,4 @@ export default Tweet
 //function Tweet({name,message,likes})
 
 
-// What is state ?
-// a data or varible based on which our app renders itself
+

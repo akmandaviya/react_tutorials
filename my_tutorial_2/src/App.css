@@ -1,0 +1,22 @@
+
+.app {
+  padding: 40px 25px;
+  margin-left: 50px;
+  background-color: lightblue;
+  border: 2px solid black;
+  width: fit-content;
+  }
+
+  .incre {
+    color: green;
+  }
+
+  .decre {
+    color: red;
+  }
+  
+  .red {
+    color: blue;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
