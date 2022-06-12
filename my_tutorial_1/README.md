@@ -4,7 +4,7 @@ Points covered in this tutorial:
   --> importing components
   --> using props
 
---> here I have shown the exmaple of basic Twiteer UI
+--> here I have shown the exmaple of basic twitter UI
    ~~> Having :
      -> Name
      -> Message
