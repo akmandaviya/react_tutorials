@@ -1,5 +1,5 @@
 Points covered in this tutorial:
---> basics or react
+--> basics of react
   --> making components
   --> importing components
   --> using props
@@ -11,4 +11,5 @@ Points covered in this tutorial:
      -> Likes
    --> props is used in it.
 
- **IMP Refer the how to use import components.txt to    understand import   
+ **IMP**
+  Refer the how to use import components.txt to    understand import   
