@@ -11,5 +11,5 @@ Points covered in this tutorial:
      -> Likes
    --> props is used in it.
 
- **IMP**
+ **IMP 
   Refer the how to use import components.txt to    understand import   
