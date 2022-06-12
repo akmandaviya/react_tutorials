@@ -1,0 +1,60 @@
+--------------------------------------
+--> This is the APP component
+--------------------------------------
+   -- > we are importing Hello and Hi from sayHello and my_compo
+   
+import React from 'react'
+import Hello from './sayHello'
+import Hi from './my_compo'
+
+
+const App = () => {
+  return (
+    <div>
+     <h1>This is App component</h1> 
+     <Hello/>
+     <Hi/>
+    </div>
+  )
+}
+
+
+export default App
+
+-----------------------------------
+-> This is Hello component
+------------------------------------
+import React from "react";
+
+function Hello () {
+    
+const sayHello = () => {
+    alert("Hello");
+  }
+return (
+   
+    <div>
+        <h5>This is Hello component</h5>
+        <button onClick={sayHello}>Say Hello</button>
+    </div>
+)
+}
+export default Hello
+
+-------------------------------------------
+This is Hi component
+------------------------------------------
+import React from "react";
+
+function Hi () {
+    const heyHi = () =>{
+        alert("Say hi to the world");
+    }
+    return (
+        <div>
+            <h5>This is Hi Component</h5>
+            <button onClick={heyHi}>Say hi</button>
+        </div>
+    )
+}
+export default Hi
