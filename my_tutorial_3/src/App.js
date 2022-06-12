@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React,{useState} from 'react'
+import Tweet from './Tweet'
 import './App.css';
 
-function App() {
+const App = () => {
+    const [users, setUsers] = useState([
+        {
+        name: "Tapu",
+        age: 10,
+        school : "Shakti High School"
+        },
+    
+        {
+        name: "sonu",
+        age: 8,
+        school : "Sacred Hearts High School"
+        },
+    
+        {
+        name: "Goli",
+        age: 9,
+        school : "Central Public School"
+        },
+    
+        {
+          name: "Gogi",
+          age: 11,
+          school : "Sophia Convent"
+          }
+       ])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      {users.map(user => (
+        <Tweet name={user.name} message ={user.age} school= {user.school}/>
+      ))}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
