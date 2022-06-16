@@ -1,0 +1,57 @@
+Props:
+
+Using class component:
+
+import React from 'react'
+import New from './component/New'
+
+class App extends React.Component {
+  render () {
+    return (
+      <div>
+        <New name= "Akshay"/>
+      </div>
+    )
+  }
+}
+export default App
+
+----X------
+
+import React from 'react'
+
+class New extends React.Component {
+    render() {
+        return (
+            <div>Hello {this.props.name}</div>
+        )
+    }
+}
+export default New
+
+
+------------------------------------------------------------------------------
+
+Using functional component
+
+
+import React from 'react'
+import New from './component/New'
+
+function App () {
+   return (
+     <div > 
+       <New name="Ajay"/>
+     </div>
+   )
+}
+----X-----
+import React from 'react'
+
+function New  (props) {
+  return (
+    <div> <h1>Hello {props.name} </h1>
+    </div>
+  )
+}
+export default New
