@@ -1,0 +1,71 @@
+--> What is redux ?
+    ~>Suppose we have case in which we have a App.js file in which have some components and in that we have some sub-components,
+      and we have to use a particular state in some of the components. Here we can use props drilling to pass that data between components,but
+      this will make development hectic and also hard to manage the application, to solve  this we used context API, but we have Redux 
+      library to manage state.
+      In redux we maintain a Redux Store, it has all the application state, whoever want any data can request the store and get the data.
+      ===>Redux make a single global object called Store to manage application state.
+      ===>Makes testing easy
+      ===>Consistency throughout the application
+
+      Action:- An action is a plain object that describes the intention to cause change
+      Reducer:- A function that determines changes to an application's state, return the new state
+                and tell the store how to do. It uses the action it receives to determine this change 
+                      
+                    |Action|-------->|Reducer|------->|Store|
+
+
+--> What is context API ?
+   ~> In the above case,
+      we can make a and can use the context in any of the components by using useContext
+      Ex: Suppose we want to change the color, we make a context API
+           Context color --> create context , now use the context in any component we want by useContext
+
+
+--> What is Higher Orde components (HOC) ?
+    A HOC is an advanced technique in React for reusing component logic, a hoc is a function that takes a component 
+    and returns a new component
+               
+--> Explain hooks?
+    Hooks are the new feature introduced in the React 16.8 version. It allows you to use state and other React features without writing a class.
+    Hooks are the functions which "hook into" React state and lifecycle features from function components. It does not work inside classes.
+    
+    useState :- useState is a Hook that allows us to have state variables in functional components. 
+                We pass the initial state to this function and it returns a variable with the current state value 
+                (not necessarily the initial state) and another function to update this value
+    
+    useEffect:- The useEffect Hook allows you to perform side effects in your components.
+                Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+                useEffect accepts two arguments. The second argument is optional. useEffect(<function>, <dependency>)
+
+    useContext:- Used to create common data that can be accessed throughout the component hierarchy without passing the props 
+                 down manually to each level. Context defined will be available to all the child components without involving “props”.
+    
+    useCallback:- Returns a memoized version of the callback that only changes if one of the dependencies has changed. 
+                  This is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders (e.g. shouldComponentUpdate ).
+    
+    useReducer:- returns an array that holds the current state value and a dispatch function to which you can pass an action and later invoke it.
+
+    useMemo:- Allows us to memoize expensive functions so that you can avoid calling them on every render. We simple pass in a function and an array of 
+              inputs and useMemo will only recompute the memoized value when one of the inputs has changed.
+
+    useRef:- The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated.
+             It can be used to access a DOM element directly.
+
+
+--> what is useEffect cleanup ?
+    The useEffect cleanup is a function in the useEffect Hook that allows us to cleanup our code before our component unmounts. 
+    When our code runs and reruns for every render, useEffect also cleans up after itself using the cleanup function.
+
+--> Component lifecycle in react?
+    The main job of React is to figure out how to modify the DOM to match what the components want to be rendered on the screen. 
+    React does so by 
+    "mounting" (adding nodes to the DOM), 
+    "unmounting" (removing them from the DOM), and 
+    "updating" (making changes to nodes already in the DOM).
+
+    The render() is the most used lifecycle method. ...
+    The componentDidMount() happens as soon as your component is mounted. ...
+    The componentDidUpdate() happens as soon as the updating happens.
+    
+
